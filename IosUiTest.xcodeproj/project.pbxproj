@@ -105,11 +105,11 @@
 				86C381701C97777E00D1C06E /* AppDelegate.m */,
 				86C381721C97777E00D1C06E /* ViewController.h */,
 				86C381731C97777E00D1C06E /* ViewController.m */,
-				86C381751C97777E00D1C06E /* Main.storyboard */,
 				86C381781C97777E00D1C06E /* Assets.xcassets */,
 				86C3817A1C97777E00D1C06E /* LaunchScreen.storyboard */,
 				86C3817D1C97777E00D1C06E /* Info.plist */,
 				86C3816C1C97777E00D1C06E /* Supporting Files */,
+				86C381751C97777E00D1C06E /* Main.storyboard */,
 			);
 			path = IosUiTest;
 			sourceTree = "<group>";

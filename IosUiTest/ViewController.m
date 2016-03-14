@@ -17,11 +17,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)buttonClicked:(id)sender {
+    UIViewController *newView = [self.storyboard instantiateViewControllerWithIdentifier:@"NextScreen"];
+    [self.navigationController pushViewController:newView animated:YES];
 }
 
 @end
