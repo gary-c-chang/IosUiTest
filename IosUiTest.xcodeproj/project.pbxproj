@@ -51,6 +51,10 @@
 		86C3818D1C97777E00D1C06E /* IosUiTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IosUiTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86C381911C97777E00D1C06E /* IosUiTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IosUiTestUITests.m; sourceTree = "<group>"; };
 		86C381931C97777E00D1C06E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86C381A91C97842E00D1C06E /* IosUiTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IosUiTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		86C381AA1C97842E00D1C06E /* IosUiTestUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IosUiTestUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		86C381AB1C97842E00D1C06E /* FirstUITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstUITest.swift; sourceTree = "<group>"; };
+		86C381AE1C97865800D1C06E /* MyUITest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUITest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,8 +138,12 @@
 		86C381901C97777E00D1C06E /* IosUiTestUITests */ = {
 			isa = PBXGroup;
 			children = (
+				86C381AE1C97865800D1C06E /* MyUITest.m */,
 				86C381911C97777E00D1C06E /* IosUiTestUITests.m */,
 				86C381931C97777E00D1C06E /* Info.plist */,
+				86C381AB1C97842E00D1C06E /* FirstUITest.swift */,
+				86C381A91C97842E00D1C06E /* IosUiTest-Bridging-Header.h */,
+				86C381AA1C97842E00D1C06E /* IosUiTestUITests-Bridging-Header.h */,
 			);
 			path = IosUiTestUITests;
 			sourceTree = "<group>";
@@ -413,10 +421,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = IosUiTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gaz.IosUiTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IosUiTestUITests/IosUiTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -424,10 +435,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = IosUiTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gaz.IosUiTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IosUiTestUITests/IosUiTest-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -458,10 +471,13 @@
 		86C3819D1C97777F00D1C06E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = IosUiTestUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gaz.IosUiTestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IosUiTestUITests/IosUiTestUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_TARGET_NAME = IosUiTest;
 				USES_XCTRUNNER = YES;
 			};
@@ -470,10 +486,12 @@
 		86C3819E1C97777F00D1C06E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = IosUiTestUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gaz.IosUiTestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IosUiTestUITests/IosUiTestUITests-Bridging-Header.h";
 				TEST_TARGET_NAME = IosUiTest;
 				USES_XCTRUNNER = YES;
 			};
